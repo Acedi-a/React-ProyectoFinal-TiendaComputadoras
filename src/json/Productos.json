@@ -1,0 +1,322 @@
+[
+  {
+    "id" : 1,
+    "name": "Asus Zephyrus",
+    "image": "https://dlcdnwebimgs.asus.com/gain/C59E480F-2542-419E-BF64-9470019C649E/w250",
+    "price": 25820.00,
+    "rating": 4,
+    "specs": ["Intel Core i9-13900H", "32GB DDR5", "1TB NVMe PCIe Gen4", "16 pulgadas QHD 240Hz", "NVIDIA GeForce RTX 4090"],
+    "category": "Laptop",
+    "brand": "Asus",
+    "discount":0
+
+  },
+  {
+    "id" : 2,
+    "name": "MacBook Pro 14",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkLVJUoYW7zjzJEYisXzTvvfaPqgyvg2AO6w&s",
+    "price": 12499.00,
+    "rating": 5,
+    "specs": ["Apple M2 Pro", "16GB Unified Memory", "512GB SSD", "14.2 pulgadas Liquid Retina XDR", "8-core GPU"],
+    "category": "Laptop",
+    "brand": "Apple",
+    "discount": 0
+
+  },
+  {
+    "id" : 3,
+    "name": "Dell XPS 13",
+    "image": "https://www.notebookcheck.org/fileadmin/_processed_/5/5/csm_XPS-13-oled-platinum-5_1f16ec4da9.png",
+    "price": 3299.00,
+    "rating": 4.2,
+    "specs": ["Intel Core i5-1235U", "8GB LPDDR5", "256GB SSD", "13.4 pulgadas FHD+", "Intel Iris Xe Graphics"],
+    "category": "Laptop",
+    "brand": "Dell",
+    "discount": 0
+
+  },
+  {
+    "id" : 4,
+    "name": "Asus Zephyrus",
+    "image": "https://assets.nvidia.partners/images/png/gu603zv-n48w.png",
+    "price": 15820.00,
+    "rating": 4,
+    "specs": ["Intel Core i7-12700H", "16GB DDR4", "512 GB SSD", "16 pulgadas FHD 120Hz", "NVIDIA GeForce RTX 4060"],
+    "category": "Laptop",
+    "brand": "Asus",
+    "discount": 0
+  },
+  {
+    "id" : 5,
+    "name": "MacBook Pro 16",
+    "image": "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111901_mbp16-gray.png",
+    "price": 16499.00,
+    "rating": 5,
+    "specs": ["Apple M1 Max", "16GB Unified Memory", "512GB SSD", "16.0 pulgadas Liquid Retina XDR", "24-core GPU"],
+    "category": "Laptop",
+    "brand": "Apple",
+    "discount": 0
+
+  },
+  {
+    "id" : 6,
+    "name": "Dell XPS 16",
+    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/16-9640/media-gallery/silver/touch/notebook-laptop-xps-16-9640-t-silver-gallery-2.psd?fmt=png-alpha&pscan=auto&scl=1&hei=402&wid=612&qlt=100,1&resMode=sharp2&size=612,402&chrss=full",
+    "price": 6299.00,
+    "rating": 3.9,
+    "specs": ["Intel Core i5-1235U", "16GB LPDDR5", "1TB SSD", "16.4 pulgadas FHD+", "Intel Iris Xe Graphics"],
+    "category": "Laptop",
+    "brand": "Dell",
+    "discount": 0
+
+  },
+  {
+    "id" : 7,
+    "name": "AMD Ryzen 9 7950X",
+    "image": "https://www.techlife.es/11935-large_default/100-100000514wof-amd-ryzen-9-7950x-a-45-57ghz-am5-16x-c.jpg",
+    "price": 3850.00,
+    "rating": 4.7,
+    "specs": ["16 núcleos", "32 hilos", "4.5 GHz base", "5.7 GHz turbo", "80MB caché", "AM5"],
+    "category": "Procesador",
+    "brand": "AMD",
+    "discount": 10
+  },
+  {
+    "id" : 8,
+    "name": "Intel Core i9-13900K",
+    "image": "https://playgasm.in/wp-content/uploads/2024/05/41KWBkBb8WL._AC_-removebg-preview.png",
+    "price": 4200.00,
+    "rating": 4.8,
+    "specs": ["24 núcleos", "32 hilos", "3.0 GHz base", "5.8 GHz turbo", "68MB caché", "LGA 1700"],
+    "category": "Procesador",
+    "brand": "Intel",
+    "discount": 10
+  },
+  {
+    "id": 9,
+    "name": "AMD Ryzen 5 5600X",
+    "image": "https://www.grupocentrotecnologico.com/wp-content/uploads/2022/07/Ryzen-5-5600X-v36.png",
+    "price": 1250.00,
+    "rating": 4.6,
+    "specs": ["6 núcleos", "12 hilos", "3.7 GHz base", "4.6 GHz turbo", "35MB caché", "AM4"],
+    "category": "Procesador",
+    "brand": "AMD",
+    "discount": 10
+  },
+  {
+    "id" : 10,
+    "name": "Intel Core i7-13700K",
+    "image": "https://static0.xdaimages.com/wordpress/wp-content/uploads/2023/10/intel-i7-14700k-render.png",
+    "price": 2800.00,
+    "rating": 4.7,
+    "specs": ["16 núcleos", "24 hilos", "3.4 GHz base", "5.4 GHz turbo", "54MB caché", "LGA 1700"],
+    "category": "Procesador",
+    "brand": "Intel",
+    "discount": 10
+
+  },
+  {
+    "id" : 11,
+    "name": "AMD Ryzen 7 5800X",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4-JMI4s-K-pAZua5DOrijObprx0p2QgCB3g&s",
+    "price": 1800.00,
+    "rating": 4.7,
+    "specs": ["8 núcleos", "16 hilos", "3.8 GHz base", "4.7 GHz turbo", "36MB caché", "AM4"],
+    "category": "Procesador",
+    "brand": "AMD",
+    "discount": 10
+  },
+  {
+    "id" : 12,
+    "name": "Intel Core i5-12600K",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN_S4gOXqcVEL-nzYJ8NilI7l4r1WoO5WHpw&s",
+    "price": 1600.00,
+    "rating": 4.6,
+    "specs": ["10 núcleos", "16 hilos", "3.7 GHz base", "4.9 GHz turbo", "20MB caché", "LGA 1700"],
+    "category": "Procesador",
+    "brand": "Intel",
+    "discount": 10
+
+  },
+  {
+    "id" : 13,
+    "name": "AMD Ryzen 3 4100",
+    "image": "https://dojiw2m9tvv09.cloudfront.net/86841/product/M_image-removebg-preview-181969.png?61&time=1725981714",
+    "price": 750.00,
+    "rating": 3.7,
+    "specs": ["4 núcleos", "8 hilos", "3.8 GHz base", "4.0 GHz turbo", "6MB caché", "AM4"],
+    "category": "Procesador",
+    "brand": "AMD",
+    "discount": 10
+  },
+  {
+    "id" : 14,
+    "name": "Intel Core i3-12100",
+    "image": "https://logg.api.cygnus.market/static/logg/Global/Procesador%20Intel%20Core%20i3-12100%204.3GHz%2012MB%20Alder%20Lake%20Gr%C3%A1ficos%20UHD%20730%20LGA1700/ff7fc4c689a541a898dc3150d169d424.webp",
+    "price": 950.00,
+    "rating": 3.9,
+    "specs": ["4 núcleos", "8 hilos", "3.3 GHz base", "4.3 GHz turbo", "12MB caché", "LGA 1700"],
+    "category": "Procesador",
+    "brand": "Intel",
+    "discount": 50
+
+  },
+  {
+    "id" : 15,
+    "name": "AMD Ryzen Threadripper 3960X",
+    "image": "https://orbitalstore.mx/pub/media/catalog/product/cache/050b3f8d407d671d5a918b5cd1cbb74f/p/r/procesador_cpu_amd_ryzen_threadripper_3960x_strx4_100-100000010wof.png",
+    "price": 8700.00,
+    "rating": 4.9,
+    "specs": ["24 núcleos", "48 hilos", "3.8 GHz base", "4.5 GHz turbo", "140MB caché", "sTRX4"],
+    "category": "Procesador",
+    "brand": "AMD",
+    "discount": 10
+  },
+  {
+    "id" : 16,
+    "name": "Intel Xeon W-3175X",
+    "image": "https://www.avadirect.com/Pictures/500/12571957_2.png",
+    "price": 11000.00,
+    "rating": 3.8,
+    "specs": ["28 núcleos", "56 hilos", "3.1 GHz base", "4.3 GHz turbo", "38.5MB caché", "LGA 3647"],
+    "category": "Procesador",
+    "brand": "Intel",
+    "discount": 10
+
+  },
+  {
+    "id" : 17,
+    "name": "NVIDIA GeForce RTX 4090",
+    "image": "https://es.static.webuy.com/product_images/Inform%C3%A1tica/Tarjetas%20Graficas%20-%20PCi-E/SGRANVI409024G01_l.jpg",
+    "price": 13350,
+    "rating": 4.9,
+    "specs": ["24 GB GDDR6X", "Ray Tracing", "DLSS 3", "8K Ready", "450W TDP"],
+    "category": "GPU",
+    "brand": "Nvidia",
+    "discount": 10
+
+  },
+  {
+    "id" : 18,
+    "name": "AMD Radeon RX 7900 XTX",
+    "image": "https://www.gigabyte.com/FileUpload/Global/KeyFeature/2235/innergigabyteimages/kfimg.png",
+    "price": 8800,
+    "rating": 4.8,
+    "specs": ["24 GB GDDR6", "Ray Tracing", "20 Gbps Memory Speed", "350W TDP"],
+    "category": "GPU",
+    "brand": "AMD",
+    "discount": 10
+  },
+  {
+    "id" : 19,
+    "name": "NVIDIA GeForce RTX 4080",
+    "image": "https://www.kfa2.com/media/catalog/product/cache/25/image/500x500/9df78eab33525d08d6e5fb8d27136e95/s/g/sg_box01_card_4080_600-k2.png",
+    "price": 10450,
+    "rating": 4.7,
+    "specs": ["16 GB GDDR6X", "Ray Tracing", "DLSS 3", "700W PSU Recommended"],
+    "category": "GPU",
+    "brand": "Nvidia",
+    "discount": 10
+  },
+  {
+    "id" : 20,
+    "name": "AMD Radeon RX 6700 XT",
+    "image": "https://static.gigabyte.com/StaticFile/Image/Global/0a0848c3f652206dc7f2c5c30c6cdf51/Product/28078/png/300",
+    "price": 4700,
+    "rating": 4.6,
+    "specs": ["12 GB GDDR6", "Ray Tracing", "192-bit Bus", "230W TDP"],
+    "category": "GPU",
+    "brand": "AMD",
+    "discount": 10
+  },
+  {
+    "id" : 21,
+    "name": "NVIDIA GeForce RTX 4060 Ti",
+    "image": "https://www.zotac.com/download/files/page/4060/desktop/flow_img.png",
+    "price": 4150,
+    "rating": 4.5,
+    "specs": ["8 GB GDDR6", "DLSS 3", "160-bit Bus", "160W TDP"],
+    "category": "GPU",
+    "brand": "Nvidia",
+    "discount": 10
+
+  },
+  {
+    "id" : 22,
+    "name": "AMD Radeon RX 7600",
+    "image": "https://www.asrock.com/Graphics-Card/photo/Radeon%20RX%207600%20Challenger%208GB%20OC(M1).png",
+    "price": 2800,
+    "rating": 3.3,
+    "specs": ["8 GB GDDR6", "Ray Tracing", "128-bit Bus", "165W TDP"],
+    "category": "GPU",
+    "brand": "AMD",
+    "discount": 10
+  },
+  {
+    "id" : 23,
+    "name": "ASUS TUF Gaming VG27AQ",
+    "image": "https://www.asus.com/media/global/products/x2ahzOXdioDZggLv/P_setting_xxx_0_90_end_500.png",
+    "price": 3200,
+    "rating": 4.8,
+    "specs": ["27 pulgadas", "2560x1440 QHD", "165Hz", "1ms", "G-Sync"],
+    "category": "Monitor",
+    "brand": "Asus",
+    "discount": 10
+  },
+  {
+    "id" : 24,
+    "name": "Dell UltraSharp U2723QE",
+    "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/peripherals/monitors/u-series/u2723qe/media-gallery/monitor-u2723qe-gallery-3.psd?fmt=png-alpha&pscan=auto&scl=1&hei=804&wid=872&qlt=100,1&resMode=sharp2&size=872,804&chrss=full",
+    "price": 4200,
+    "rating": 3.5,
+    "specs": ["27 pulgadas", "3840x2160 4K", "HDR 400", "99% AdobeRGB", "USB-C"],
+    "category": "Monitor",
+    "brand": "Dell",
+    "discount": 10
+  },
+  {
+    "id" : 25,
+    "name": "LG UltraGear 34GP83A-B",
+    "image": "https://dv9dhd03d71d4.cloudfront.net/eyJidWNrZXQiOiJwcm9kLXd3dy1hc3NldHMtcGVyZmVjdHJlYyIsImtleSI6ImltYWdlcy9wcm9kdWN0cy9tb25pdG9ycy9QZXJmZWN0cmVjX01vbml0b3JzX0xHMzRHUDgzQS5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjYwMCwiZml0IjoiY292ZXIifX19",
+    "price": 6800,
+    "rating": 4.7,
+    "specs": ["34 pulgadas", "3440x1440 UWQHD", "160Hz", "1ms", "HDR10"],
+    "category": "Monitor",
+    "brand": "LG",
+    "discount": 10
+  },
+  {
+    "id" : 26,
+    "name": "Samsung Odyssey G7",
+    "image": "https://samsungplusnuevo.s3.amazonaws.com/product-family-item-image-image/normal/product-family-item-image-image_ubvtW7XEN8y05k9ODljY.png",
+    "price": 5400,
+    "rating": 4.8,
+    "specs": ["32 pulgadas", "2560x1440 QHD", "240Hz", "1ms", "HDR600"],
+    "category": "Monitor",
+    "brand": "Samsung",
+    "discount": 10
+  },
+  {
+    "id" : 27,
+    "name": "Acer Predator X38",
+    "image": "https://imagecdn.jw.com.au/media/catalog/product/p/r/predator_monitor_x-series_x38_x38_s_wp-03_3.png?width=514&height=514&store=default&image-type=image",
+    "price": 8600,
+    "rating": 4.9,
+    "specs": ["38 pulgadas", "3840x1600 UWQHD+", "175Hz", "1ms", "HDR400"],
+    "category": "Monitor",
+    "brand": "Acer",
+    "discount": 10
+  },
+  {
+    "id" : 28,
+    "name": "MSI Optix MAG274QRF-QD",
+    "image": "https://storage-asset.msi.com/global/picture/news/2021/monitor/monitor-20211118-5.png",
+    "price": 3700,
+    "rating": 2.7,
+    "specs": ["27 pulgadas", "2560x1440 QHD", "165Hz", "1ms", "Quantum Dot"],
+    "category": "Monitor",
+    "brand": "MSI",
+    "discount": 10
+  }
+
+]

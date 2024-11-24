@@ -1,0 +1,34 @@
+.navbar {
+    background-color: #79007B;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+.logo{
+    margin-left: 40px;
+    color: white;
+}
+
+.barnav{
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    margin-right: 30px;
+    gap: 30px;
+}
+
+.navbar input{
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    border: none;
+
+}
+
+.navbar a{
+    color: white;
+}

@@ -1,0 +1,35 @@
+[
+  {
+    "name": "Sara Marques Gutierrez",
+    "rating": 4.5,
+    "title": "buenos productos",
+    "desc": "Encontre todos los productos que queria y a buen precio, recomendado",
+    "avatar": "https://unavatar.io/sara/",
+    "date": "12/10/2024"
+  },
+  {
+    "name": "Juan Alberto WIlmer",
+    "rating": 5,
+    "title": "La mejor tienda en donde compre",
+    "desc": "Me encanto el lugar y me atendieron muy bien, compraria otra vez sin dudar",
+    "avatar": "https://unavatar.io/juan/",
+    "date": "23/11/2024"
+  },
+  {
+    "name": "Carlos Mendoza Layme",
+    "rating": 4,
+    "title": "Buena atencion",
+    "desc": "La atencion fue buena y me atendieron rapido, solo no encontre unas cosas ",
+    "avatar": "https://unavatar.io/carlos/",
+    "date": "25/10/2024"
+  },
+  {
+    "name": "Maria Angela Ortiz",
+    "rating": 3.9,
+    "title": "Atencion buena pero tardada",
+    "desc": "La atencion fue buena aunque pero tardaron en atenderme",
+    "avatar": "https://unavatar.io/maria/",
+    "date": "12/10/2024"
+
+  }
+]
