@@ -15,7 +15,7 @@ const CardProductoVersus = ({ producto }) => {
     return (
         <div className="bg-white rounded-xl overflow-hidden">
             <div className="relative">
-                <div className="aspect-[4/3] bg-gray-100">
+                <div className="aspect-[4/3] flex justify-center text-center items-center bg-gray-100">
                     <img
                         src={producto.image || "/api/placeholder/400/300"}
                         alt={producto.name}

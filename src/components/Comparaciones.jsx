@@ -69,7 +69,7 @@ const Comparaciones = () => {
                 {categoriaSelcionada ? (
                     <div className="space-y-8">
 
-                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start relative">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 space-x-2 items-start relative">
                             <div className="hidden lg:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 bg-white rounded-full p-6 shadow-lg">
                                 <div className="flex items-center gap-4 text-2xl font-bold text-blue-600">
                                     <ArrowLeft className="w-6 h-6" />
@@ -78,13 +78,13 @@ const Comparaciones = () => {
                                 </div>
                             </div>
 
-                            <div className="relative">
+                            <div className="relative rounded-2xl shadow-[10px_0px_15px_5px_rgba(0,0,255,0.3)] p-1 ">
                                 <select
                                     className="w-full mb-6 rounded-xl border-2 border-gray-200 shadow-sm focus:border-blue-500 focus:ring-blue-500 py-3 px-4 bg-white appearance-none"
                                     value={producto1}
                                     onChange={(e) => ProductoSeleccionado(e, setProducto1, setDatosProducto1)}
                                 >
-                                    <option value="">Selecciona el primer producto</option>
+                                    <option value={ProductosCategorizados[categoriaSelcionada][0].id}>Selecciona el primer producto</option>
                                     {ProductosCategorizados[categoriaSelcionada]?.map((producto) => (
                                         <option key={producto.id} value={producto.id}>
                                             {producto.name}
@@ -96,13 +96,13 @@ const Comparaciones = () => {
                                 </div>
                             </div>
 
-                            <div className="relative">
+                            <div className="relative rounded-2xl shadow-[-10px_0px_15px_5px_rgba(255,0,0,0.3)] p-1">
                                 <select
                                     className="w-full mb-6 rounded-xl border-2 border-gray-200 shadow-sm focus:border-blue-500 focus:ring-blue-500 py-3 px-4 bg-white appearance-none"
                                     value={producto2}
                                     onChange={(e) => ProductoSeleccionado(e, setProducto2, setDatosProducto2)}
                                 >
-                                    <option value="">Selecciona el segundo producto</option>
+                                    <option value={ProductosCategorizados[categoriaSelcionada][0].id}>Selecciona el segundo producto</option>
                                     {ProductosCategorizados[categoriaSelcionada]?.map((producto) => (
                                         <option key={producto.id} value={producto.id}>
                                             {producto.name}

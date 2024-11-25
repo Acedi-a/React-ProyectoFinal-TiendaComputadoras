@@ -5,7 +5,7 @@
     "title": "buenos productos",
     "desc": "Encontre todos los productos que queria y a buen precio, recomendado",
     "avatar": "https://unavatar.io/sara/",
-    "date": "12/10/2024"
+    "date": "05/11/2024"
   },
   {
     "name": "Juan Alberto WIlmer",
@@ -21,7 +21,7 @@
     "title": "Buena atencion",
     "desc": "La atencion fue buena y me atendieron rapido, solo no encontre unas cosas ",
     "avatar": "https://unavatar.io/carlos/",
-    "date": "25/10/2024"
+    "date": "01/10/2024"
   },
   {
     "name": "Maria Angela Ortiz",
@@ -29,7 +29,25 @@
     "title": "Atencion buena pero tardada",
     "desc": "La atencion fue buena aunque pero tardaron en atenderme",
     "avatar": "https://unavatar.io/maria/",
+    "date": "15/10/2024"
+
+  },
+  {
+    "name": "Ismael Ortiz",
+    "rating": 4.1,
+    "title": "Encontre una buena pc",
+    "desc": "Me recomendaron una PC para salir de diamante en Rocket League y si funciono",
+    "avatar": "https://unavatar.io/ismael/",
     "date": "12/10/2024"
+
+  },
+  {
+    "name": "Daniel Jurado Mendez",
+    "rating": 4.5,
+    "title": "Buenos productos a buen precio",
+    "desc": "Encontre los productos que necesitaba a buen precio a comparacion de otros comercios",
+    "avatar": "https://unavatar.io/daniel/",
+    "date": "23/10/2024"
 
   }
 ]

@@ -64,12 +64,6 @@ const Navbar = () => {
                             <span className="hidden md:inline">Versus</span>
                         </NavLink>
 
-                        <NavLink to="/error404" className={navLinkClass}>
-                            <User size={20} />
-                            <span className="hidden md:inline">Perfil</span>
-                        </NavLink>
-
-
                         <NavLink to="/carrito" className={navLinkClass}>
                             <div className="relative">
                                 <ShoppingCart size={20} />

@@ -1,0 +1,14 @@
+
+@keyframes gradient-xy {
+    0%, 100% {
+        background-size: 400% 400%;
+    }
+
+    50% {
+        background-size: 400% 400%;
+    }
+}
+
+.animate-gradient-xy {
+    animation: gradient-xy 3s ease infinite;
+}

@@ -1,0 +1,33 @@
+.carrousel-container {
+    overflow: hidden;
+    background-color: #f3f4f6; /* Color gris claro */
+    padding: 1rem 0;
+}
+
+.carrousel-track {
+    display: flex;
+    gap: 2rem; /* Espaciado entre elementos */
+    animation: scroll 20s linear infinite;
+    white-space: nowrap; /* Evita que las filas se rompan */
+}
+
+.carrousel-item {
+    flex: none;
+    text-align: center;
+    font-size: 1.125rem; /* Tamaño de fuente */
+    font-weight: 600;
+    background-color: #ffffff; /* Fondo blanco */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 0.5rem; /* Bordes redondeados */
+    padding: 0.5rem 1rem;
+}
+
+/* Animación de desplazamiento continuo */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
