@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import 'flowbite/dist/flowbite.css';
 import './index.css';
 import './App.css'
@@ -15,9 +14,11 @@ function App() {
         <>
             <div className="App sm:w-auto">
                 <Carrusel/>
-                <div className="home-categoria mx-5 mt-10 sm:w-auto ">
+                <div className="home-categoria  mx-5 mt-10 sm:w-auto ">
                     <h2 className="pl-10 text-2xl font-bold">Categorias destacadas</h2>
-                    <Categoria/>
+                    <div className="flex justify-center text-center items-center">
+                        <Categoria/>
+                    </div>
                 </div>
 
                 <div className=" flex flex-col mx-10 mt-10 pt-10 mb-10">
@@ -39,7 +40,7 @@ function App() {
 
                 <div className="mx-10 flex flex-col justify-center text-center items-center w-full overflow-hidden" style={{marginBottom: "150px"}}>
                     <h2 className="pl-5 text-2xl mb-5 font-bold">Si te ha gustado mi web porfavor puntualo aqui</h2>
-                    <div className=" w-1/3 ">
+                    <div className=" w-96 flex justify-center items-center  ">
                         <img src={qr} alt="qr"/>
                     </div>
                 </div>

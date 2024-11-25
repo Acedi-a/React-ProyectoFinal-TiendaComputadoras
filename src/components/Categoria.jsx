@@ -2,7 +2,7 @@ import CardCategoria from "./CardCategoria.jsx";
 
 const Categoria = () => {
     return (
-        <div className="lg:flex lg:flex-row sm:items-center sm:grid sm:grid-cols-1 ">
+        <div className="lg:flex lg:flex-row sm:items-center sm:grid sm:grid-cols-2 ">
             <CardCategoria
                 img="https://ea7afb82ef.clvaw-cdnwnd.com/372c680b73f7635a4aa3d4a3c21bf815/200003139-e518be615f/OFERTA%20ESPECIAL.png?ph=ea7afb82ef"
                 name="Ofertas" url="ofertas"/>

@@ -1,9 +1,16 @@
-import { createContext, useContext, useState } from 'react';
+import { createContext, useContext, useState, useEffect } from 'react';
 
 const CarritoContext = createContext(undefined);
 
 export const CarritoProvider = ({ children }) => {
-    const [carrito, setCarrito] = useState([]);
+    const [carrito, setCarrito] = useState(() => {
+        const carritoGuardado = localStorage.getItem('carrito');
+        return carritoGuardado ? JSON.parse(carritoGuardado) : [];
+    });
+
+    useEffect(() => {
+        localStorage.setItem('carrito', JSON.stringify(carrito));
+    }, [carrito]);
 
     const agregarAlCarrito = (producto) => {
         setCarrito(prevCarrito => {
@@ -12,7 +19,7 @@ export const CarritoProvider = ({ children }) => {
             if (productoExistente) {
                 return prevCarrito.map(item =>
                     item.id === producto.id
-                        ? {...item, cantidad: item.cantidad + 1}
+                        ? { ...item, cantidad: item.cantidad + 1 }
                         : item
                 );
             }
@@ -28,7 +35,7 @@ export const CarritoProvider = ({ children }) => {
         setCarrito(prevCarrito =>
             prevCarrito.map(item =>
                 item.id === productoId
-                    ? {...item, cantidad: nuevaCantidad}
+                    ? { ...item, cantidad: nuevaCantidad }
                     : item
             )
         );
@@ -36,8 +43,8 @@ export const CarritoProvider = ({ children }) => {
 
     const calcularTotal = (descuento = 0, agregado = 0) => {
         let precio = carrito.reduce((total, item) => total + (item.price * item.cantidad), 0);
-        precio-= descuento;
-        precio+=agregado;
+        precio -= descuento;
+        precio += agregado;
         return precio.toFixed(2);
     };
 
