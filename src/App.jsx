@@ -38,10 +38,10 @@ function App() {
                     <CarrouselMarcas/>
                 </div>
 
-                <div className="mx-10 flex flex-col justify-center text-center items-center w-full overflow-hidden" style={{marginBottom: "150px"}}>
-                    <h2 className="pl-5 text-2xl mb-5 font-bold">Si te ha gustado mi web porfavor puntualo aqui</h2>
-                    <div className=" w-96 flex justify-center items-center  ">
-                        <img src={qr} alt="qr"/>
+                <div className="flex flex-col justify-center text-center items-center w-full overflow-hidden" style={{marginBottom: "150px"}}>
+                    <h2 className="pl-5 text-3xl mb-5 font-bold">Si te ha gustado mi web porfavor puntualo aqui</h2>
+                    <div className="p-5 flex justify-center items-center  ">
+                        <img src={qr} alt="qr" style={{width: "600px"}}/>
                     </div>
                 </div>
 

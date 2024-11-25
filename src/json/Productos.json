@@ -317,6 +317,28 @@
     "category": "Monitor",
     "brand": "MSI",
     "discount": 10
+  },
+  {
+    "id" : 29,
+    "name": "ASUS ROG STRIX Z790-E ",
+    "image": "https://www.intermaco.com.ar/productos/90MB1CL0-M0EAY0.jpg",
+    "price": 1545,
+    "rating": 4.1,
+    "specs": ["LGA 1700", " DDR5", "Wifi 6E", "5 x PCIe 5.0 M.2", "2 x Thunderbolt"],
+    "category": "Placa base",
+    "brand": "Asus",
+    "discount": 65
+  },
+  {
+    "id" : 30,
+    "name": "Z890 AORUS ELITE WIFI7",
+    "image": "https://www.gigabyte.com/FileUpload/Global/KeyFeature/3777/innergigabyte/images/product/summary.png",
+    "price": 2157,
+    "rating": 5,
+    "specs": ["LGA 1851", " DDR5", "Wifi 7", "1 x PCIe 5.0 M.2", "3 x PCIe 4.0 M.2"],
+    "category": "Placa base",
+    "brand": "Aorus",
+    "discount": 65
   }
 
 ]

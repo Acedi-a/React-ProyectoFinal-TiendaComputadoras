@@ -10,8 +10,8 @@ const AsideFiltros = ({
                           onCategoryChange,
                           selectedCategories
                       }) => {
-    const Marcas = ['Acer', 'MSI', 'Asus', 'Samsung', 'Apple', 'Dell', 'AMD', 'Intel', 'Nvidia', 'LG'];
-    const Categorias = ['Monitor', 'Laptop', 'Procesador', 'Tarjeta Gráfica', 'Memoria RAM', 'Almacenamiento', 'Periféricos'];
+    const Marcas = ['Acer', 'MSI', 'Asus', 'Samsung', 'Apple', 'Dell', 'AMD', 'Intel', 'Nvidia', 'LG', 'Aorus'];
+    const Categorias = ['Monitor', 'Laptop', 'Procesador', 'Tarjeta Gráfica', 'Placa base'];
 
     const [Rprecio, setRpprecio] = useState(0);
     const HandelRangoPrecio = (e) => {

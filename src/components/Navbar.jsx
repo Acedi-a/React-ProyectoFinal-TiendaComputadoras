@@ -1,7 +1,8 @@
 import { NavLink } from "react-router-dom";
 import { useCarrito } from "../context/CarritoContext.jsx";
-import { Search, ShoppingCart, User, Home, Monitor, Cpu } from "lucide-react";
+import { Search, ShoppingCart, Home , Cpu } from "lucide-react";
 import {useState} from "react";
+import Dropdown from "./Dropdown.jsx";
 
 const Navbar = () => {
     const { carrito } = useCarrito();
@@ -21,7 +22,6 @@ const Navbar = () => {
         <nav className="fixed top-0 w-full z-50 shadow-lg" style={{ backgroundColor: "#79007B" }}>
             <div className="max-w-7xl mx-auto">
                 <div className="flex justify-between items-center px-4 py-3">
-                    {/* Logo section */}
                     <NavLink
                         to="/"
                         className="flex items-center gap-2 transition-transform hover:scale-105"
@@ -54,10 +54,12 @@ const Navbar = () => {
                             <span className="hidden md:inline">Inicio</span>
                         </NavLink>
 
-                        <NavLink to="/productos" className={navLinkClass}>
-                            <Monitor size={20} />
-                            <span className="hidden md:inline">Productos</span>
-                        </NavLink>
+                        {/*<NavLink to="/productos" className={navLinkClass}>*/}
+                        {/*    <Monitor size={20} />*/}
+                        {/*    <span className="hidden md:inline">Productos</span>*/}
+                        {/*</NavLink>*/}
+
+                        <Dropdown  />
 
                         <NavLink to="/versus" className={navLinkClass}>
                             <Cpu size={20} />

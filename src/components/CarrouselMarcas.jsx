@@ -11,7 +11,9 @@ const CarrouselMarcas = () => {
         "https://images.seeklogo.com/logo-png/20/1/acer-logo-png_seeklogo-209268.png?v=638663326980000000",
         "https://images.seeklogo.com/logo-png/12/1/samsung-logo-png_seeklogo-122023.png?v=638653750940000000",
         "https://images.seeklogo.com/logo-png/18/1/intel-logo-png_seeklogo-181977.png?v=638663306710000000",
-        "https://seeklogo.com/images/A/AMD-logo-2847522454-seeklogo.com.png"
+        "https://seeklogo.com/images/A/AMD-logo-2847522454-seeklogo.com.png",
+        "https://images.seeklogo.com/logo-png/8/1/lg-electronics-logo-png_seeklogo-83711.png?v=638653840210000000",
+        "https://images.seeklogo.com/logo-png/52/1/aorus-logo-png_seeklogo-522138.png"
     ];
 
     return (

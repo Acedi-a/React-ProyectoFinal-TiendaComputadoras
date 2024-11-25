@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
 import AsideFiltros from "./AsideFiltros.jsx";
 import CardProducto from "./CardProducto.jsx";
 import ProductosJSON from "../json/Productos.json";
@@ -64,8 +63,8 @@ const Productos = () => {
         const paginas = [];
         for (let i = 1; i <= totalPaginas; i++) {
             if (
-                i === 1 || // Primera página
-                i === totalPaginas || // Última página
+                i === 1 ||
+                i === totalPaginas ||
                 (i >= paginaActual - 2 && i <= paginaActual + 2)
             ) {
                 paginas.push(i);
@@ -73,7 +72,6 @@ const Productos = () => {
                 paginas.push('...');
             }
         }
-        // Elimina duplicados de puntos suspensivos
         return paginas.filter((pagina, indice, array) =>
             array.indexOf(pagina) === indice
         );
@@ -81,8 +79,8 @@ const Productos = () => {
 
     return (
         <div className="max-w-[1920px] mx-auto px-4 lg:px-8" style={{marginTop: "80px"}}>
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-                <div className="lg:col-span-2">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
+                <div className="lg:col-span-2 ">
                     <div className="sticky top-24">
                         <AsideFiltros
                             onPriceChange={(precio) => {
@@ -99,15 +97,14 @@ const Productos = () => {
                     </div>
                 </div>
 
-                {/* Grid de productos */}
-                <div className="lg:col-span-10">
+                <div className="lg:col-span-10 ">
                     <div className="mb-4">
                         <p className="text-gray-600">
                             Mostrando {productosActuales.length} de {productosFiltrados.length} productos
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-4 gap-4">
+                    <div className="grid lg:grid-cols-4 sm:grid-cols-2 gap-4">
                         {productosActuales.map((producto) => (
                             <CardProducto
                                 key={producto.id}

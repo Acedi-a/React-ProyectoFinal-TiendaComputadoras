@@ -14,7 +14,7 @@ const Categoria = () => {
                 name="Procesadores" url="Procesador"/>
             <CardCategoria
                 img="https://www.asus.com/microsite/motherboard/Intel-Alder-Lake-Z690-H670-B660/es/websites/img/pd/MZ690E_1-1.png"
-                name="Placas base" url="placa-base"/>
+                name="Placas base" url="Placa base"/>
             <CardCategoria
                 img="https://sologamerbolivia.com/cdn/shop/files/Asus-ProArt-Display-PA328QV-31.5inch-Monitors-7-600x600.webp?v=1730299915&width=533"
                 name="Monitores" url="Monitor"/>

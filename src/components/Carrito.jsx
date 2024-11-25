@@ -3,11 +3,10 @@ import Confetti from "react-confetti";
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
 import { useCarrito } from "../context/CarritoContext.jsx";
-import {faBoxOpen, faTrash, faTruck} from "@fortawesome/free-solid-svg-icons";
+import { faBoxOpen, faTrash } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { v4 as uuidv4 } from "uuid";
-
-
+import TarjetaForm from "./TarjetaForm.jsx";
 
 const MySwal = withReactContent(Swal);
 
@@ -22,7 +21,7 @@ const FechaEnvio = () => {
     const nombreDia = diasESP[hoy.getDay()];
     const numeroDia = hoy.getDate();
 
-    return `${nombreDia}  ${numeroDia}`;
+    return `${nombreDia} ${numeroDia}`;
 };
 
 const Carrito = () => {
@@ -31,18 +30,11 @@ const Carrito = () => {
     const total = calcularTotal();
     const envio = 50;
 
-
     let dsTotal = 0;
 
-
-    carrito.map(item => {
+    carrito.forEach(item => {
         dsTotal += item.price * (item.disc / 100);
-        console.log(item.name +" "+item.price+" "+item.disc)
-        //console.log(dsTotal);
-    })
-
-
-    console.log(carrito)
+    });
 
     const realizarPedido = () => {
         const idPedido = uuidv4();
@@ -64,27 +56,24 @@ const Carrito = () => {
     };
 
     return (
-        <div className="px-10 text-center w-auto" style={{marginBottom: "100px"}}>
+        <div className="px-4 sm:px-10 w-full max-w-7xl mx-auto">
             {showConfetti && <Confetti />}
-            <h2 className="text-2xl font-bold mb-4">Carrito de Compras</h2>
+            <h2 className="text-2xl font-bold mb-6 text-center">Carrito de Compras</h2>
 
             {carrito.length === 0 ? (
-                <div style={{ height: "40vh" }}>
-                    <h2 className="mb-5">No hay productos en el carrito de compras</h2>
-                    <div style={{ marginTop: "50px", transform: "rotate(-180deg)"}}>
-                        <FontAwesomeIcon icon={faBoxOpen} bounce style={{color: "#79007b", fontSize: "100px"}} />
-
-                    </div>
+                <div className="flex flex-col items-center justify-center" style={{ height: "40vh" }}>
+                    <h2 className="text-lg mb-4">No hay productos en el carrito de compras</h2>
+                    <FontAwesomeIcon icon={faBoxOpen} bounce className="text-purple-600 text-6xl" />
                 </div>
             ) : (
-                <div className="grid grid-cols-3 gap-7 mx-auto">
-                    <div className="cardProductoCarrito col-span-2">
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <div className="lg:col-span-2 space-y-4">
                         {carrito.map((item) => (
-                            <div key={item.id} className="grid grid-cols-12 border-b py-5">
-                                <div className="h-48 flex items-center justify-center col-span-3">
-                                    <img src={item.image} alt={item.name} className="h-full" />
+                            <div key={item.id} className="grid grid-cols-1 sm:grid-cols-12 gap-4 border-b py-5">
+                                <div className="sm:col-span-3 flex justify-center items-center">
+                                    <img src={item.image} alt={item.name} className="h-32 sm:h-48"/>
                                 </div>
-                                <div className="text-start col-span-7 flex flex-col  justify-around gap-2">
+                                <div className="sm:col-span-6 flex flex-col justify-around space-y-2">
                                     <h3 className="font-semibold text-lg">{item.name}</h3>
                                     <p>{item.specs.join(" / ")}</p>
                                     <p>{item.price} Bs.</p>
@@ -98,20 +87,18 @@ const Carrito = () => {
                                         Recíbelo el {FechaEnvio()}
                                     </span>
                                 </div>
-                                <div className="flex flex-col items-center gap-2 justify-around col-span-2">
-                                    <div className="flex flex-row items-center gap-2">
+                                <div className="sm:col-span-3 flex flex-col items-center space-y-2">
+                                    <div className="flex items-center space-x-2">
                                         <button
-                                            onClick={() =>
-                                                actualizarCantidad(item.id, Math.max(1, item.cantidad - 1))
-                                            }
-                                            className="px-2 py-1 bg-gray-200 rounded"
+                                            onClick={() => actualizarCantidad(item.id, Math.max(1, item.cantidad - 1))}
+                                            className="px-3 py-1 bg-gray-200 rounded"
                                         >
                                             -
                                         </button>
                                         <span>{item.cantidad}</span>
                                         <button
                                             onClick={() => actualizarCantidad(item.id, item.cantidad + 1)}
-                                            className="px-2 py-1 bg-gray-200 rounded"
+                                            className="px-3 py-1 bg-gray-200 rounded"
                                         >
                                             +
                                         </button>
@@ -120,48 +107,88 @@ const Carrito = () => {
                                         onClick={() => eliminarDelCarrito(item.id)}
                                         className="text-red-500 text-2xl"
                                     >
-                                        <FontAwesomeIcon icon={faTrash} style={{ color: "#ff5252" }} />
+                                        <FontAwesomeIcon icon={faTrash}/>
                                     </button>
                                 </div>
                             </div>
                         ))}
                     </div>
-
-                    <div className="justify-center flex text-lg font-bold mb-4 col-span-1">
-                        <div className="max-w-md fixed st mx-auto p-6 h-fit rounded-lg shadow-[0_0px_30px_-10px_rgba(0,0,0,0.7)]">
-                            <h2 className="text-xl font-semibold text-center mb-4">
-                                Resumen del pedido
-                            </h2>
+                    <div >
+                        <div className="bg-white rounded-lg shadow-lg p-6 space-y-4">
+                            <h2 className="text-xl font-semibold text-center">Resumen del pedido</h2>
                             <div className="space-y-3">
                                 <div className="flex justify-between">
                                     <span className="text-gray-700">Precio de los productos</span>
                                     <span className="font-medium">{total} Bs.</span>
                                 </div>
-                                <div className="flex justify-between space-x-5">
-                                    <span className="text-gray-700">
-                                        Gastos de envío <span className="text-gray-500">(Fin de semana)</span>
-                                    </span>
+                                <div className="flex justify-between">
+                                    <span className="text-gray-700">Gastos de envío</span>
                                     <span className="font-medium">{envio} Bs.</span>
                                 </div>
-                                <div className="flex justify-between space-x-10">
-                                    <span className="text-gray-700">
-                                        Descuento <span className="text-gray-500">(Variable)</span>
-                                    </span>
-                                    <span className="font-medium">{dsTotal} Bs.</span>
+                                <div className="flex justify-between">
+                                    <span className="text-gray-700">Descuento</span>
+                                    <span className="font-medium">{dsTotal.toFixed(2)} Bs.</span>
                                 </div>
                                 <div className="flex justify-between text-lg font-semibold">
                                     <span>Total del pedido</span>
-                                    <span>{calcularTotal(dsTotal,envio)} Bs.</span>
+                                    <span>{calcularTotal(dsTotal, envio)} Bs.</span>
                                 </div>
                             </div>
                             <button
                                 onClick={realizarPedido}
-                                className="w-full mt-6 py-2 bg-purple-600 text-white font-semibold rounded-lg hover:bg-purple-700"
+                                className="w-full py-2 bg-purple-600 text-white font-semibold rounded-lg hover:bg-purple-700"
                             >
                                 Realizar pedido
                             </button>
                         </div>
+                        <TarjetaForm/>
+                        {/*<div>*/}
+                        {/*    <div className=" text-gray-300 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl shadow-xl grid grid-rows-3 items-start p-2" style={{ width: "100%", height: "200px", fontFamily: "Inconsolata" }}>*/}
+                        {/*        <div className="flex justify-between ">*/}
+                        {/*            <p>Tarjeta de debito</p>*/}
+                        {/*            <img className="w-20" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/1200px-Visa_Inc._logo.svg.png" alt=""/>*/}
+                        {/*        </div>*/}
+                        {/*        <div className="flex items-center gap-10">*/}
+                        {/*            <img className="w-12 ml-5" src="https://cdn-icons-png.flaticon.com/512/9334/9334627.png" alt="credit-chip"/>*/}
+                        {/*            <p className="text-xl font-bold">1234 1234 1234 1234</p>*/}
+                        {/*        </div>*/}
+                        {/*        <div className="">*/}
+                        {/*            <div className="flex justify-star items-center ">*/}
+                        {/*                <p className="w-10 text-xs">Fecha Exp.</p>*/}
+                        {/*                <p className="text-xl">12/24</p>*/}
+                        {/*            </div>*/}
+                        {/*            <diV>*/}
+                        {/*                <p>Daniel Gustavo Jimenez</p>*/}
+                        {/*            </diV>*/}
+                        {/*        </div>*/}
+                        {/*    </div>*/}
+                        {/*    <diV>*/}
+                        {/*        <form>*/}
+                        {/*            <diV>*/}
+                        {/*                <lable>Numero de tarjeta</lable>*/}
+                        {/*                <input type="text"/>*/}
+                        {/*            </diV>*/}
+                        {/*            <diV>*/}
+                        {/*                <div>*/}
+                        {/*                    <lable>fecha de expiracion</lable>*/}
+                        {/*                    <input type="text"/>*/}
+                        {/*                </div>*/}
+                        {/*                <div>*/}
+                        {/*                    <label>CVV</label>*/}
+                        {/*                    <input type="number"/>*/}
+                        {/*                </div>*/}
+                        {/*                <div>*/}
+                        {/*                    <lable>Nombre del propietario</lable>*/}
+                        {/*                    <input type="text"/>*/}
+                        {/*                </div>*/}
+
+                        {/*            </diV>*/}
+
+                        {/*        </form>*/}
+                        {/*    </diV>*/}
+                        {/*</div>*/}
                     </div>
+
                 </div>
             )}
         </div>
